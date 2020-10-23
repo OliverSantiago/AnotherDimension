@@ -8,6 +8,7 @@ public static void main(String[] args) {
   int[][]arr2={{1,3,5},{4,7,5}};
   //System.out.println(ArrayOps.sum(arr));
   //System.out.println(ArrayOps.largest(arr));
-  System.out.println(ArrayOps.sumRows(arr2));
+  //System.out.println(ArrayOps.sumRows(arr2));
+  System.out.println(ArrayOps.largestInRows(arr2));
 }
 }
