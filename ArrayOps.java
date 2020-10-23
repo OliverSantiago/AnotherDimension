@@ -16,4 +16,13 @@ public class ArrayOps{
     }
     return maxnum;
   }
+
+  public static int[] sumRows(int[][]matrix){
+    int[]answer=new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++){
+      answer[i]=sum(matrix[i]);
+    }
+    return answer;
+  }
+
 }
