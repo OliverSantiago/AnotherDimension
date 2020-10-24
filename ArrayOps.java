@@ -42,10 +42,20 @@ public class ArrayOps{
   }
 
   //helper function
-  
+  public static int helpcolumnsum(int[][]matrix, int k){
+    int answer = 0;
+    for (int i = 0; i < matrix.length; i++){
+      answer+=matrix[i][k];
+    }
+    return answer;
+  }
 
   public static int[] sumCols(int[][] matrix){
-
+    int[]answer=new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++){
+      answer[i]=helpcolumnsum(matrix,i);
+    }
+    return answer;
   }
 
 }
