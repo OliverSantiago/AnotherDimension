@@ -41,4 +41,11 @@ public class ArrayOps{
     return answer;
   }
 
+  //helper function
+  
+
+  public static int[] sumCols(int[][] matrix){
+
+  }
+
 }
