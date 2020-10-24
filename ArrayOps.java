@@ -51,11 +51,23 @@ public class ArrayOps{
   }
 
   public static int[] sumCols(int[][] matrix){
-    int[]answer=new int[matrix.length];
-    for (int i = 0; i < matrix.length; i++){
+    int rowsize = matrix[0].length;
+    int[]answer=new int[matrix[0].length];
+    for (int i = 0; i < rowsize; i++){
       answer[i]=helpcolumnsum(matrix,i);
     }
     return answer;
+  }
+
+  public static boolean isColMagic(int[][] matrix){
+    int temp = 0;
+    temp = helpcolumnsum(matrix,0);
+    for (int i = 0; i < matrix.length; i++){
+      if(temp!=helpcolumnsum(matrix,i)){
+        return false;
+      }
+    }
+    return true;
   }
 
 }
