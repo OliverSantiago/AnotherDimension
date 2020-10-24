@@ -16,5 +16,6 @@ public static void main(String[] args) {
   System.out.println(ArrayOps.sum(A));
   System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
   System.out.println(ArrayOps.isColMagic(Arr2));
+  System.out.println(ArrayOps.isRowMagic(Arr));
 }
 }
