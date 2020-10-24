@@ -59,6 +59,17 @@ public class ArrayOps{
     return answer;
   }
 
+  public static boolean isRowMagic(int[][] matrix){
+    int temp = 0;
+    temp = sum(matrix[0]);
+    for (int i = 0; i < matrix.length; i++){
+      if (temp!=sum(matrix[i])){
+        return false;
+      }
+    }
+    return true;
+  }
+
   public static boolean isColMagic(int[][] matrix){
     int temp = 0;
     temp = helpcolumnsum(matrix,0);
