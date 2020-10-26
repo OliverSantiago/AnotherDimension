@@ -74,7 +74,7 @@ public class ArrayOps{
   public static boolean isColMagic(int[][] matrix){
     int temp = 0;
     temp = helpcolumnsum(matrix,0);
-    for (int i = 0; i < matrix.length; i++){
+    for (int i = 0; i < matrix[i].length; i++){
       if(temp!=helpcolumnsum(matrix,i)){
         return false;
       }
