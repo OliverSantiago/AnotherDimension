@@ -45,7 +45,8 @@ public class ArrayOps{
   public static int helpcolumnsum(int[][]matrix, int k){
     int answer = 0;
     for (int i = 0; i < matrix.length; i++){
-      answer+=matrix[i][k];
+      if (matrix[i].length!=0){
+      answer+=matrix[i][k];}
     }
     return answer;
   }
