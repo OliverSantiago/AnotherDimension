@@ -9,15 +9,22 @@ public static void main(String[] args) {
   int[]B={1,3,5};
   int[][]Arr={{1,2,3,4},{2,3,4,1},{3,4,1,2}};
   int[][]Arr2={{1,1,1},{2,2,2},{3,3,3}};
-  int[][]Arr3={{1,2,3,4},{},{},{3,4,2,4,5}};
+  int[][]Arr3={{1,2,3,4},{1,2,0,4},{1,2,3,4}};
   int[][]E={{2,4,2},{2,2,2}};
+  int[][]D = {
+  {9, 3, 22, 16},
+  {2, 21, 20, 14},
+  {25, 19, 13, 7},
+  {18, 12, 6, 5},
+  {11, 10, 4, 23}
+  };
   System.out.println(ArrayOps.sum(B));
   System.out.println(ArrayOps.largest(B));
   System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
   System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
   System.out.println(ArrayOps.sum(A));
   System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
-  System.out.println(ArrayOps.isColMagic(Arr3));
+  System.out.println(ArrayOps.isColMagic(D));
   System.out.println(ArrayOps.isRowMagic(Arr));
   System.out.println(ArrayOps.isLocationMagic(E,1,0));
 }
