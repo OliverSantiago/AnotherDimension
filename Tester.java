@@ -18,13 +18,19 @@ public static void main(String[] args) {
   {18, 12, 6, 5},
   {11, 10, 4, 23}
   };
+  int[][]F={
+    {9, 3, 22, 16, 15},
+    {2, 21, 20, 14, 8},
+    {25, 19, 13, 7, 1},
+    {18, 12, 6, 5, 24},
+    {11, 10, 4, 23, 17}};
   System.out.println(ArrayOps.sum(B));
   System.out.println(ArrayOps.largest(B));
   System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
   System.out.println(Arrays.toString(ArrayOps.largestInRows(A)));
   System.out.println(ArrayOps.sum(A));
   System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
-  System.out.println(ArrayOps.isColMagic(D));
+  System.out.println(ArrayOps.isColMagic(F));
   System.out.println(ArrayOps.isRowMagic(Arr));
   System.out.println(ArrayOps.isLocationMagic(E,1,0));
 }
